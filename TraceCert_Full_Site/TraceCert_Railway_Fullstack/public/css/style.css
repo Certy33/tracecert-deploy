@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+  background: #f7f7f7;
+  margin: 0; padding: 0;
+}
+header {
+  background: #0057ff;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+header nav { margin-top: 1rem; }
+nav a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: underline;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+}
+form input, form button {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+button {
+  background: #0057ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

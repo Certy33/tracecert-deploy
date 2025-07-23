@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TraceCert - Digital Housing Certificates</title><link rel="stylesheet" href="css/style.css"/></head>
+<body><header><h1>TraceCert</h1><p>Where Housing Records Think Smarter Than You Do</p>
+<nav><a href="index.html">Home</a><a href="viewer.html">View Certificate</a><a href="certs.html">All Certs</a></nav></header>
+<main><section><h2>What is TraceCert?</h2>
+<p>TraceCert lets you upload and mint tamper-proof housing certificates using blockchain technology.</p></section>
+<section><h2>Get Started</h2>
+<form action="/mint" method="post" enctype="multipart/form-data">
+<input type="text" name="propertyAddress" placeholder="Property Address" required />
+<input type="text" name="contractorName" placeholder="Contractor Name" required />
+<input type="date" name="completionDate" required />
+<input type="text" name="certificateType" placeholder="Certificate Type" required />
+<input type="file" name="certificateFile" required />
+<button type="submit">Mint Certificate</button>
+</form></section></main></body></html>
