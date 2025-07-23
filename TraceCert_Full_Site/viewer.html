@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>View Certificate | TraceCert</title><link rel="stylesheet" href="css/style.css"/></head>
+<body>
+<header><h1>TraceCert</h1><p>Certificate Viewer</p>
+<nav><a href="index.html">Home</a><a href="viewer.html">View Certificate</a><a href="certs.html">All Certs</a></nav></header>
+<main><section><h2>Find Your Certificate</h2>
+<p>Enter your token ID or scan your QR code to view the housing certificate on blockchain.</p>
+<form onsubmit="event.preventDefault(); lookupCert();">
+<input type="text" id="tokenId" placeholder="Enter Token ID" required/>
+<button>Lookup</button></form><div id="certResult"></div></section></main>
+<script>
+function lookupCert() {
+  const tokenId = document.getElementById("tokenId").value;
+  const address = "0xceB79b10f3668b5528AE287d1161b1152FCcf458";
+  const url = `https://opensea.io/assets/matic/${address}/${tokenId}`;
+  document.getElementById("certResult").innerHTML = 
+    `<p><strong>OpenSea Link:</strong> <a href="${url}" target="_blank">${url}</a></p>`;
+}
+</script></body></html>
